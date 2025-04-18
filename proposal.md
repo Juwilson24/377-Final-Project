@@ -33,3 +33,19 @@ H3: *Properties located in areas with climate-related risks (e.g. flood zones) h
 
 Baseline: *Previous studies or Zillow research reports can give ballpark estimates (e.g., how much a 1-point increase in walkability boosts home prices).*
 
+## Dashboard
+**Interactive Real Estate Dashboard**
+- Our dashboard will allow users to regional factors (amenities, socioeconomic conditions, climate risk, etc) correlate with housing prices. 
+- Dashboard Layout:
+    - Display a map of neighborhoods in metro areas colored by median home prices
+    - Users would be able to view home prices, nighborhood names, and other key states
+    - Dashboard would also display proximity of regional factors to homes
+- Visuals:
+    - Amenities:
+        - Visual to show price vs distance to amenities(park, school, subway)
+        - Heatmap to show density of certain amenities in an metro area.
+     - Climate Risk:
+         - Visual to show average price distance between high/low climate risk areas
+         - Display to show proximity of possible naturatl disaster to homes with home prices
+         
+
