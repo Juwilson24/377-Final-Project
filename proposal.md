@@ -55,5 +55,10 @@ Baseline: *Previous studies or Zillow research reports can give ballpark estimat
 - The maps will be embedded on the dashboard, via tooltips by the Streamlit python library
 
 ### Data
-- Data provides nationwide 
+- Data provides nationwide loan-level records such as:
+    - Loan Application Details
+    - Applicant Demographics
+    - Geographic Data
+- We can use the variable msamd_name which holds names of the metro areas to find proximity to amenities
+- We can utilize state_name variable to research types of climates risk by each state then use the msamd_name variable to filter by particular areas. 
 
