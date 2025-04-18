@@ -60,5 +60,26 @@ Baseline: *Previous studies or Zillow research reports can give ballpark estimat
     - Applicant Demographics
     - Geographic Data
 - We can use the variable msamd_name which holds names of the metro areas to find proximity to amenities
-- We can utilize state_name variable to research types of climates risk by each state then use the msamd_name variable to filter by particular areas. 
+- We can utilize state_name variable to research types of climates risk by each state then use the msamd_name variable to filter by particular areas.
 
+| **Concept**             | **Description** |
+|-------------------------|-----------------|
+| **Home Prices**         | Sourced from Redfin or Zillow datasets. Includes median sale price, number of homes sold, and neighborhood names. This is the core dependent variable in our analysis. |
+| **Amenities**           | Pulled from OpenStreetMap or city-specific data portals. Includes the locations of schools, parks, public transit stations. Will be used to compute proximity to each amenity. |
+| **Socioeconomic Data**  | From the U.S. Census Bureau’s American Community Survey (ACS). Variables include median income, unemployment rates, and education levels at the neighborhood or census tract level. |
+| **Crime Rates**         | Accessed via local city open data platforms (e.g., NYC Open Data). Contains incident-level or aggregated neighborhood crime statistics. Used to test the impact of safety on home values. |
+| **Climate Risk**        | FEMA Flood Maps, First Street Foundation, or ClimateCheck. Provides data on flood zones, wildfire risk, and other climate hazards by region or parcel. Used to assess H3. |
+| **Geographic Boundaries** | GeoJSON or shapefile data from TIGER/Line (U.S. Census) or city GIS repositories. Defines the physical boundaries of neighborhoods or metro areas. Required for mapping and spatial joins. |
+| **Loan & Demographic Data** | HMDA (Home Mortgage Disclosure Act) dataset. Includes loan application details, applicant income, race, gender, and location via `msamd_name`. Useful for filtering and segmentation. |
+
+### Missing Data
+
+| **Metric** | **Description** |
+|------------|-----------------|
+| **R² (Coefficient of Determination)** | Measures how much of the variation in home prices is explained by the model. Values closer to 1 indicate better model performance. |
+| **MAE (Mean Absolute Error)** | Evaluates the average prediction error in dollar terms. Lower MAE means the model is making more accurate price predictions. |
+| **P-values** | Used in regression analysis to determine if a predictor (e.g., distance to subway, crime rate) is statistically significant. A p-value < 0.05 typically indicates a meaningful effect. |
+| **Variance Inflation Factor (VIF)** | Identifies multicollinearity between independent variables to ensure the model's stability and interpretability. |
+| **Feature Importance** | In machine learning models (e.g., Random Forest), this ranks which features (e.g., income, amenity proximity) are most influential in predicting home prices. |
+| **Geospatial Visual Clarity** | A qualitative measure of how clearly maps display spatial patterns like clustering of high/low prices or proximity trends. |
+| **Baseline Comparison** | Compares model results to external industry benchmarks (e.g., Zillow research) to verify that trends and effect sizes are realistic. |
