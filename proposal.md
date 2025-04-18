@@ -16,7 +16,7 @@ These specific questions aim to shed light on how spatial and socioeconomic feat
 ### Type of Project
 This is primarily an explanatory/relationship-based project.
 
-## Hypotheses
+### Hypotheses
 H1: *Homes closer to public transit hubs or good schools command higher prices.*
 
 H2: *Neighborhoods with higher average income and lower crime rates have higher real estate values.*
@@ -24,7 +24,7 @@ H2: *Neighborhoods with higher average income and lower crime rates have higher 
 H3: *Properties located in areas with climate-related risks (e.g. flood zones) have lower values, controlling for other factors.*
 
 
-## Metrics of Success
+### Metrics of Success
 **Statistical significance of location-based predictors in a regression or model.**
 
 1. Model performance (if we use prediction methods): R² or MAE on test set.
@@ -33,7 +33,7 @@ H3: *Properties located in areas with climate-related risks (e.g. flood zones) h
 
 Baseline: *Previous studies or Zillow research reports can give ballpark estimates (e.g., how much a 1-point increase in walkability boosts home prices).*
 
-## Dashboard
+### Dashboard
 **Interactive Real Estate Dashboard**
 - Our dashboard will allow users to regional factors (amenities, socioeconomic conditions, climate risk, etc) correlate with housing prices. 
 - Dashboard Layout:
@@ -47,5 +47,13 @@ Baseline: *Previous studies or Zillow research reports can give ballpark estimat
      - Climate Risk:
          - Visual to show average price distance between high/low climate risk areas
          - Display to show proximity of possible naturatl disaster to homes with home prices
-         
+
+### How to Handle Maps
+- Integrate Pythons Folium & Plotly librariers to create interactive maps.
+- Merge Redfin's neighborhood price data with public geographic boundries 
+- We will overlay amenity & climate risk data 
+- The maps will be embedded on the dashboard, via tooltips by the Streamlit python library
+
+### Data
+- Data provides nationwide 
 
