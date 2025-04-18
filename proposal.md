@@ -74,6 +74,25 @@ Baseline: *Previous studies or Zillow research reports can give ballpark estimat
 
 ### Missing Data
 
+To ensure that our analysis produces both statistically valid and practically meaningful insights, we will evaluate our models using a combination of quantitative metrics and qualitative assessments. These methods will help us assess how well regional factors explain or predict housing prices, and whether the patterns shown in our dashboard are both accurate and interpretable.
+
+While R² and MAE were mentioned initially, we’re expanding our framework to include several important tools for evaluating regression models, machine learning predictions, and geospatial insights.
+
+- **R²** will show how well our models explain the variability in home prices.
+
+- **MAE** offers an intuitive measure of prediction accuracy in dollar terms.
+
+- **P-values** will help validate the statistical significance of individual predictors tied to our core hypotheses (e.g., H1: homes closer to amenities are worth more).
+
+- **Variance Inflation Factor (VIF)** will help check for multicollinearity between predictors like income and education.
+
+- **Feature Importance** will rank which geographic or socioeconomic variables are most influential in ML models.
+
+- **Geospatial Visual Clarity** allows us to evaluate whether patterns like clustering, amenity proximity, or climate risk are clearly communicated through maps.
+
+- **Baseline Comparison** ensures our results are aligned with industry benchmarks from Zillow, Redfin, and academic literature—supporting the real-world relevance of our findings.
+
+
 | **Metric** | **Description** |
 |------------|-----------------|
 | **R² (Coefficient of Determination)** | Measures how much of the variation in home prices is explained by the model. Values closer to 1 indicate better model performance. |
